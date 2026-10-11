@@ -13,10 +13,10 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
     allow_credentials=False,
-    allow_methods=["POST", "OPTIONS"],
+    allow_methods=["*"],
     allow_headers=["*"],
+    expose_headers=["*"],
 )
-
 DATA_FILE = Path(__file__).parent / "q-vercel-latency.json"
 
 
